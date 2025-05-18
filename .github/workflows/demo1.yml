@@ -5,6 +5,11 @@ on:
       - opened
       - edited
       - closed
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - develop
 jobs:
   deploy:
     runs-on: ubuntu-latest
